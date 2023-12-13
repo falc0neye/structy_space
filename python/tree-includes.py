@@ -58,5 +58,5 @@ def tree_includes(root, val):
     
 
 
-print(tree_sum(a)) # -> 10
+print(tree_includes(a)) # -> 10
 
