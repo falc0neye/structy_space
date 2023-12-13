@@ -1,0 +1,17 @@
+*.pyc
+*.pyo
+*.pyt
+*.ipynb
+*.pytc
+*.egg-info
+.*.swp
+.DS_Store
+/venv*
+.cache/
+build/
+.idea/
+.coverage
+/.mypy_cache
+.ipynb_checkpoints
+__pycache__
+.vscode
