@@ -6,15 +6,7 @@ def binary_search_sorted(nums, target):
     left = 0 # left index of binary search
     right = len(nums) - 1 # right index of binary seach
     # iterate and cut binary search in half depending on evaluation of current number compared to target
-    while left < right:
-        # Edge case to account for when target number is 1st, 2nd, or last, 2nd to last
-        if right - left == 1:
-            if nums[left] == target:
-                return left
-            if nums[right] == target:
-                return right
-            else:
-                return None
+    while left <= right:
         # pointer is always equal to the midway point between left and right index positions
         pointer = math.floor((left + right) / 2) 
         # return index of match
