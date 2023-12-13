@@ -14,7 +14,7 @@ def binary_search_sorted(nums, target):
             if nums[right] == target:
                 return right
             else:
-                return False
+                return None
         # pointer is always equal to the midway point between left and right index positions
         pointer = math.floor((left + right) / 2) 
         # return index of match
@@ -27,22 +27,24 @@ def binary_search_sorted(nums, target):
         # split array to right side since current pointer is < target
             left = pointer + 1
             
-    return False
+    return None
 
 l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 #    0  1  2  3  4  5  6  7  8   9  10 
 
-# print(binary_search_sorted(l, 1)) # 
-# print(binary_search_sorted(l, 2)) # 
-# print(binary_search_sorted(l, 3)) # 
-# print(binary_search_sorted(l, 4)) # 
-# print(binary_search_sorted(l, 5)) # 
-# print(binary_search_sorted(l, 6)) # 
-# print(binary_search_sorted(l, 7)) # 
-# print(binary_search_sorted(l, 8)) # 
-# print(binary_search_sorted(l, 9)) # 
-# print(binary_search_sorted(l, 10)) # 
-# print(binary_search_sorted(l, 11)) #
+# print(binary_search_sorted(l, 1)) # 0
+# print(binary_search_sorted(l, 2)) # 1
+# print(binary_search_sorted(l, 3)) # 2
+# print(binary_search_sorted(l, 4)) # 3
+# print(binary_search_sorted(l, 5)) # 4
+# print(binary_search_sorted(l, 6)) # 5
+# print(binary_search_sorted(l, 7)) # 6
+# print(binary_search_sorted(l, 8)) # 7
+# print(binary_search_sorted(l, 9)) # 8
+# print(binary_search_sorted(l, 10)) # 9
+# print(binary_search_sorted(l, 11)) # 10
+# print(binary_search_sorted(l, -5)) # None
+# print(binary_search_sorted(l, 75)) # None
 
 
 
